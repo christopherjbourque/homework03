@@ -24,7 +24,7 @@ No special hardware or software is required to use this web app.  All you need i
 
 ## Screenshots
 
-![](https://github.com/christopherjbourque/homework3/blob/master/Media/Screenshot-1.png)
+![](https://github.com/christopherjbourque/homework03/blob/master/Media/Screenshot-1.png)
 
 
 ## Built With
@@ -46,8 +46,9 @@ Christopher J Bourque
 
 ## Acknowlegments
 
-Bradley Traversy, Udemy course: "Modern JavaScript from the Beginning"
-Edwin Diaz, Udemy course: "Javascript Intermediate Level 2 - All About Functions"
-Traversy Media, YouTube Video: "JavaScript Password Generator"
-W3Schools, w3schools.com
-MANY posts on Stack Overflow
+I consulted a significant number of resources to help me with this product.  These include:
+* Bradley Traversy, Udemy course: "Modern JavaScript from the Beginning"
+* Edwin Diaz, Udemy course: "Javascript Intermediate Level 2 - All About Functions"
+* Traversy Media, YouTube Video: "JavaScript Password Generator"
+* W3Schools, w3schools.com
+* MANY posts on Stack Overflow
