@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <!-- Embed Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+
+    <!-- Embed Google Icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!-- Embed style sheet -->
+    <link rel="stylesheet" href="CSS/custom.css">    
+
+</head>
+
+<body>
+
+    <!-- IDs and classes are used for both CSS styling and JS functions -->
+
+    <!-- Display form area -->
+    <div id="form-area">
+        
+        <!-- Display page title -->
+        <div>
+            <h1 id="title">Password Generator</h1>
+        </div>
+        
+        <!-- Display components as subtitle -->
+        <div>
+            <h2 id="subtitle">HTML + CSS + JS</h2>
+        </div>
+        
+        <!-- Display generated password and allow user to copy password-->
+        <!-- Reference https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+        <div class="password-area">
+            <span id="password"></span>
+            <button id="copy-btn">
+                <i class="material-icons">file_copy</i>
+            </button>
+        </div>
+        
+        <!-- Allow user to set password length (defaulted to 12)-->
+        <!-- Reference: https://www.w3schools.com/html/html_form_input_types.asp -->
+        <div class="criterion">
+            <label for="length">Password length (8-20 characters)</label>
+            <input type="number" id="length" name="length" min="8" max="20" value="12">
+        </div>
+        
+        <!-- Allow user to include / exclude uppercase letters in / from generated password -->
+        <!-- Reference: https://www.w3schools.com/html/html_form_input_types.asp -->
+        <div class="criterion">
+            <label for="uppercase">Include uppercase letters</label>
+            <input type="checkbox" id="uppercase" name="uppercase" checked>
+        </div>
+        
+        <!-- Allow user to include / exclude lowercase letters in / from generated password -->
+        <!-- Reference: https://www.w3schools.com/html/html_form_input_types.asp -->
+        <div class="criterion">
+            <label for="lowercase">Include lowercase letters</label>
+            <input type="checkbox" id="lowercase" name="lowercase" checked>
+        </div>
+        
+        <!-- Allow user to include / exclude numbers in / from generated password -->
+        <!-- Reference: https://www.w3schools.com/html/html_form_input_types.asp -->
+        <div class="criterion">
+            <label for="numbers">Include numbers</label>
+            <input type="checkbox" id="numbers" name="numbers" checked>
+        </div>
+        
+        <!-- Allow user to include / exclude special characters in / from generated password -->
+        <!-- Reference: https://www.w3schools.com/html/html_form_input_types.asp -->
+        <div class="criterion">
+            <label for="characters">Include special characters</label>
+            <input type="checkbox" id="characters" name="characters" checked>
+        </div>
+        
+        <!-- Allow user to generate password -->
+        <div>
+            <button id="generate-btn">Generate Password</button>
+        </div>
+    
+    </div>
+
+</body>
+
+<script src="JS/scripts.js"></script>
+
+</html>

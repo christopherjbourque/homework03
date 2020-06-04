@@ -1,0 +1,147 @@
+/* 	Set box-sizing to border-box, which includes content, padding, and border in width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Set design properties for the page */
+body {
+    background-image: linear-gradient(to bottom right, #c1c2c4, #eaeaeb); /* Reference: https://www.w3schools.com/css/css3_gradients.asp */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100vh; /* full height page */
+}
+
+/* Set design properties for the form area */
+#form-area {
+    width: 400px;
+    border: 1px solid #000000;
+    background-color: #464a4f;
+    padding: 20px;
+}
+
+/* Set design properties for the title */
+#title {
+    font-family: 'Lato';
+    font-size: 24px;
+    color: #e1e2e2;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Set design properties for the subtitle */
+#subtitle{
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+}
+
+/* Set design properties for the password area (the span where the generated password appears) */
+.password-area {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+    background-color: #1d2228;
+    text-align: center;
+}
+
+/* Set design properties for the generated password that will appear in the password area span */
+#password {
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 50px; Reference: https://css-tricks.com/centering-css-complete-guide/
+}
+
+/* Set design properties for the Copy button (copy generated password) */
+#copy-btn {
+    float: right;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border: 2px solid #f15025;
+    background-color: #1d2228;
+}
+
+/* Set design properties for the Copy button (copy generated password) when the user hovers over it */
+#copy-btn:hover {
+    border: 2px solid #f15025;
+    background-color: #f15025;
+}
+
+/* Set design properties for the Copy button (copy generated password) when the user clicks it */
+#copy-btn:active {
+    border: 2px solid #b12e0a;
+    background-color: #b12e0a;
+}
+
+/* Set design properties for Copy icon (on Copy Password button) */
+.material-icons {
+    font-size: 20px;
+    padding: 5px 0px;
+    color: #f15025;
+}
+
+/* Set design properties for Copy icon (on Copy Password button) when the user hovers over the Copy button */
+/* We do not need to set design properties for the icon when the button is pushed because the user must be hovering over the Copy button to click it */
+#copy-btn:hover .material-icons {
+    font-size: 20px;
+    padding: 5px 0px;
+    color: #ffffff;
+}
+
+/* Set design properties for all password criteria fields */
+.criterion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    font-family: 'Roboto';
+}
+
+/* Set design properties for label element of all password criteria fields */
+label {
+    color: #ffffff;
+}
+
+/* Set design properties for checkbox input element of all password criteria fields */
+input[type=checkbox] {
+    margin-right: 0;
+    color: #ffffff;
+}
+
+/* Set design properties for the Generate Password button */
+#generate-btn {
+    display: block; /* to allow button to be centered with auto left and righ margins */
+    margin: 30px auto 10px; /* top margin of of 40px, left and right auto margin to center button, and 10px bottom margin */
+    border: 2px solid #f15025;
+    padding: 10px;
+    background-color: #464a4f;
+    color: #f15025;
+    text-transform: uppercase;
+}
+
+/* Set design properties for the Generate Password button when the user hovers over it. */
+#generate-btn:hover {
+    display: block; /* to allow button to be centered with auto left and righ margins */
+    margin: 30px auto 10px; /* top margin of of 40px, left and right auto margin to center button, and 10px bottom margin */
+    border: 2px solid #f15025;
+    padding: 10px;
+    background-color: #f15025;
+    color: #eaeaeb;
+    text-transform: uppercase;
+}
+
+/* Set design properties for the Generate Password button when the user clicks it */
+#generate-btn:active {
+    display: block; /* to allow button to be centered with auto left and righ margins */
+    margin: 30px auto 10px; /* top margin of of 40px, left and right auto margin to center button, and 10px bottom margin */
+    border: 2px solid #b12e0a;
+    padding: 10px;
+    background-color: #b12e0a;
+    color: #eaeaeb;
+    text-transform: uppercase;
+}
